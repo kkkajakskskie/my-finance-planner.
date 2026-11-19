@@ -1,7 +1,180 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#24150e"><title>Мой бюджет — органайзер</title><link rel="manifest" href="manifest.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet"><style>
-:root{--coffee:#3b261d;--deep:#24150e;--wine:#6b141a;--paper:#f3efe6;--line:#c9bba6;--muted:#786b60;--green:#596b50}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:18px 10px 40px;color:#211a17;font-family:Manrope,sans-serif;background:radial-gradient(ellipse at 50% 10%,#594033,#2b1b14 55%,#160e0a)}.shell{max-width:950px;margin:auto}.top{display:flex;justify-content:space-between;color:#e6d8c8;font-size:9px;letter-spacing:.2em;text-transform:uppercase;margin:0 5px 12px}.binder{padding:12px;background:linear-gradient(110deg,#4a3024,#2b1a12);border:1px solid #7b5b43;border-radius:12px;box-shadow:0 24px 70px #10090588}.cover{padding:30px 26px 20px;min-height:190px;color:#f8f2e8;border-radius:7px;background:linear-gradient(135deg,#4c3024,#2a170f 70%,#3b2419);box-shadow:inset 0 0 35px #10090588}.cover small{font-size:9px;letter-spacing:.2em}.cover h1{font:600 clamp(43px,8vw,72px)/.8 'Cormorant Garamond',serif;margin:25px 0 8px}.cover h1 span{display:block;font-style:italic;font-size:.7em;margin-left:95px}.hand{font:20px Caveat,cursive;color:var(--wine)}.cover .hand{color:#d7c4b0}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 3px 0}.tab{border:1px solid #a38a70;background:#d7cbb8;color:#3a2a21;padding:9px 13px;border-radius:5px 5px 0 0;font:600 14px 'Cormorant Garamond',serif}.tab.active{background:var(--paper);color:var(--wine)}.paper{position:relative;background:var(--paper);min-height:610px;padding:27px clamp(15px,4vw,42px) 32px 62px;box-shadow:inset 0 0 28px #9a876022}.paper:before{content:"";position:absolute;left:30px;top:0;bottom:0;width:1px;background:#c5b5a1;box-shadow:5px 0 #e0d6c7}.rings{position:absolute;left:12px;top:45px;display:flex;flex-direction:column;gap:36px}.ring{width:31px;height:21px;border:4px solid #999;border-radius:50%;background:linear-gradient(90deg,#555,#eee 35%,#777);box-shadow:0 2px 3px #44372c}.lace{height:9px;margin:-10px -12px 22px;border-block:1px solid #b9a994;background:repeating-linear-gradient(90deg,transparent 0 8px,#b9a994 8px 9px,transparent 9px 14px);opacity:.65}.head{display:flex;justify-content:space-between;gap:12px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:20px}.eyebrow{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}h2{font:600 clamp(30px,5vw,43px)/.95 'Cormorant Garamond',serif;margin:7px 0;color:#38251d}h3{font:600 25px 'Cormorant Garamond',serif;margin:0 0 8px}.switch{display:flex;gap:5px;flex-wrap:wrap}.pill,.action{border:1px solid #b9a994;background:#f8f5ee;padding:8px 12px;color:#55463b;border-radius:25px;font-size:11px}.pill.active,.primary{background:var(--wine);border-color:var(--wine);color:white}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:16px 0}.stat{padding:12px;border:1px solid #d1c4b1;background:linear-gradient(145deg,#faf7f0,#eae2d5)}.stat b{display:block;font:600 23px 'Cormorant Garamond',serif;color:var(--wine)}.stat small{font-size:9px;text-transform:uppercase;color:var(--muted)}.section{margin:24px 0}.section-title{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:8px}.row{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-bottom:1px dashed #d2c6b5}.row input{appearance:none;width:19px;height:19px;border:1.5px solid #907c68;border-radius:3px;background:#fbf8f1;display:grid;place-items:center}.row input:checked{background:var(--green);border-color:var(--green)}.row input:checked:after{content:'✓';color:white}.row.done .label{text-decoration:line-through;color:#8c8175}.label{font-size:13px;font-weight:600}.detail{display:block;font-size:10px;color:var(--muted);margin-top:3px}.amount{font:600 19px 'Cormorant Garamond',serif;white-space:nowrap}.note{background:#e9e0d2;border-left:3px solid #b59a70;padding:11px 13px;font-size:11px;line-height:1.6;color:#625346}.progress{height:8px;background:#ded4c5;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:linear-gradient(90deg,#6b141a,#a34b43);width:0}.goalgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.goal{border:1px solid #d2c5b3;background:#f8f5ed;padding:15px}.goal p{font-size:11px;color:#76685b;line-height:1.5}.history{padding:11px 0;border-bottom:1px dashed #d2c6b5;font-size:12px;display:flex;justify-content:space-between;gap:8px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:5px}.calendar span{padding:8px 0;font-size:11px}.calendar .today{outline:2px solid var(--wine);border-radius:50%}.count{display:inline-block;background:var(--wine);color:white;padding:13px 20px;font:600 42px 'Cormorant Garamond',serif}.envelope{max-width:330px;height:175px;margin:15px auto;background:linear-gradient(145deg,#583728,#301b12);border:1px solid #775540;box-shadow:0 10px 18px #47332655;display:grid;place-items:center;color:#f1e7d8;cursor:pointer;position:relative}.envelope:after{content:"";position:absolute;inset:0 0 42% 0;background:#674936;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.4s}.envelope.open:after{transform:rotateX(180deg)}.envelope span{z-index:1;font:italic 25px 'Cormorant Garamond',serif}.zip{display:none;max-width:330px;margin:auto;padding:12px;border:1px solid #c5b49d;background:#ffffff80}.zip.show{display:block}.zip textarea{width:100%;min-height:75px;background:#fffaf1;border:1px solid #cbbda9;padding:8px}.hidden{display:none!important}.foot{display:flex;justify-content:space-between;margin-top:24px;color:#827465;font-size:9px;letter-spacing:.08em}@media(max-width:600px){body{padding:9px 6px 25px}.binder{padding:8px}.paper{padding:22px 12px 28px 47px}.paper:before{left:24px}.rings{left:6px;gap:29px}.ring{width:27px;height:18px}.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}.head{display:block}.switch{margin-top:12px}.goalgrid{grid-template-columns:1fr}.tab{padding:8px 9px}}
-</style></head><body><div class="shell"><div class="top"><span>личные финансы · том I</span><span>система маленьких шагов</span></div><div class="binder"><header class="cover"><small>PERSONAL FINANCE · PLANNER</small><h1>Мой бюджет<span>и маленькие победы</span></h1><div class="hand">«Порядок в деньгах — больше свободы в решениях»</div><div style="margin-top:22px">♡　✉　⌁　♧</div></header><nav class="tabs"><button class="tab active" data-page="distribution">Распределение</button><button class="tab" data-page="goals">Цели</button><button class="tab" data-page="history">История</button><button class="tab" data-page="calendar">Календарь</button></nav><main class="paper"><div class="rings"><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i></div><div class="lace"></div>
-<section id="distribution"><div class="head"><div><div class="eyebrow">ежемесячный план</div><h2>Распределение</h2><div class="hand">сначала план — потом галочки</div></div><div class="switch" id="months"></div></div><div class="stats"><div class="stat"><small>Доход месяца</small><b id="income">21 635 ₽</b></div><div class="stat"><small>Отмечено</small><b id="done">0 ₽</b></div><div class="stat"><small>Выполнено</small><b id="percent">0%</b></div></div><div class="progress"><i id="bar"></i></div><div class="section"><div class="section-title"><h3>Сначала обязательное</h3><span class="eyebrow">каждый месяц</span></div><div id="fixed"></div></div><div class="section"><div class="section-title"><h3>Конверты этого месяца</h3><span class="hand" id="kind">месяц А</span></div><p class="note">Здесь нет баланса конвертов — только сумма пополнения и отметка. Сколько уже лежит внутри, органайзер не показывает.</p><div id="envelopes"></div></div><div class="section"><div class="section-title"><h3>Итог месяца</h3><button class="action" id="editIncome">Изменить доход</button></div><div id="totals"></div></div><div class="foot"><span>ЛИСТ № 01 · МОЙ ФИНАНСОВЫЙ ПЛАН</span><span id="monthfoot">НОЯБРЬ · А</span></div></section>
-<section id="goals" class="hidden"><div class="head"><div class="eyebrow">долгий путь складывается из шагов</div><h2>Мои цели</h2><div class="hand">не торопиться, но продолжать</div></div><div class="goalgrid"><article class="goal"><div class="eyebrow">ежемесячно</div><h3>Основной перевод</h3><b class="amount">12 500 ₽</b><p>Регулярная сумма, которую ты решила переводить. Назначение не подписываем — только фиксируем выполнение.</p></article><article class="goal"><div class="eyebrow">резерв</div><h3>Финансовая подушка</h3><b class="amount">по плану А / Б</b><p>Пополняется по очереди. Показываем только ежемесячные шаги.</p></article><article class="goal"><div class="eyebrow">забота о себе</div><h3>Здоровье</h3><b class="amount">по плану А / Б</b><p>Отдельный конверт для запланированных расходов.</p></article><article class="goal"><div class="eyebrow">приятные планы</div><h3>Путешествия и крупные покупки</h3><b class="amount">по очереди</b><p>В одном месяце пополняется одна категория, в следующем — другая.</p></article></div><div class="section"><div class="section-title"><h3>Тропа маленьких побед</h3><span class="eyebrow">отмечай этапы</span></div><div id="milestones"></div></div><p class="note">Отметки сохраняются в браузере автоматически. Для переноса на другое устройство скачивай резервную копию в разделе «История».</p></section>
-<section id="history" class="hidden"><div class="head"><div class="eyebrow">следы проделанной работы</div><h2>История</h2><div class="hand">каждая галочка — маленькая победа</div></div><div class="section-title"><h3>Недавние отметки</h3><button class="action" id="export">Скачать копию</button></div><div id="events"></div><div class="section"><h3>Восстановить данные</h3><p class="note">Выбери JSON-файл резервной копии. Импорт заменит текущие данные.</p><input type="file" id="import" accept="application/json"></div><button class="action" id="reset">Сбросить отметки выбранного месяца</button></section>
-<section id="calendar" class="hidden"><div class="head"><div class="eyebrow">дата следующего финансового шага</div><h2>Календарь</h2><div class="hand">маленький ритуал порядка</div></div><div class="eyebrow" id="calMonth"></div><div class="calendar" id="cal"></div><div style="text-align:center;margin:28px 0"><div class="eyebrow">до следующего 25-го числа</div><div style="margin:12px"><span class="count" id="count">—</span></div><div class="hand">дней до нового финансового шага</div></div><div class="envelope" id="env"><span>маленький конверт</span></div><div class="zip" id="zip"><div class="hand">Записка себе</div><textarea id="note" placeholder="Напиши пару слов себе..."></textarea><button class="action primary" id="saveNote">Сохранить записку</button></div><p class="note">Конверт — декоративная интерактивная деталь. Он не показывает и не хранит суммы.</p></section><div class="lace" style="margin:25px -12px -18px"></div></main></div></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2b160f">
+<title>Мой бюджет — личный органайзер</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--leather:#2b160f;--leather2:#47291d;--leather3:#684432;--paper:#f4eddf;--paper2:#e9deca;--ink:#302019;--muted:#887566;--wine:#6f2028;--gold:#b08b57;--line:#d3c2a9;--green:#65734e;--shadow:0 24px 70px #10090570}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;padding:24px 12px 50px;background:radial-gradient(ellipse at 50% 0%,#75523d 0,#3a2419 42%,#170d09 100%);color:var(--ink);font-family:"DM Sans",sans-serif}
+button,input{font:inherit}button{cursor:pointer}.desk{max-width:1180px;margin:auto}.desk-label{display:flex;justify-content:space-between;color:#e4d2bb;text-transform:uppercase;letter-spacing:.2em;font-size:9px;margin:0 8px 12px}
+.book{position:relative;padding:14px;border:1px solid #8d6849;border-radius:17px;background:linear-gradient(105deg,#523423,#2b160f 18%,#422719 50%,#2a160f);box-shadow:var(--shadow),inset 0 0 0 3px #170c08,inset 0 0 0 5px #725039;overflow:hidden}
+.book:before{content:"";position:absolute;inset:9px;border:1px solid #9c7654;border-radius:10px;pointer-events:none;opacity:.55}
+.book-spine{position:absolute;left:0;top:0;bottom:0;width:42px;background:linear-gradient(90deg,#1c0d08,#563725 48%,#24120c);border-right:1px solid #9a7452;z-index:4}
+.stitch{position:absolute;left:8px;top:16px;bottom:16px;width:1px;border-left:1px dashed #b38d68;opacity:.7}
+.book-rings{position:absolute;left:24px;top:95px;bottom:65px;display:flex;flex-direction:column;justify-content:space-around;z-index:8;pointer-events:none}
+.ring{width:32px;height:18px;border:4px solid #aeb0ae;border-right-color:#666;border-radius:50%;background:linear-gradient(90deg,#555,#f3f0e9 48%,#777);box-shadow:0 2px 4px #160d09}
+.spread{position:relative;margin-left:30px;min-height:780px;border-radius:5px 10px 10px 5px;background:var(--paper);box-shadow:inset 9px 0 18px #6d51301c,0 3px 10px #10090555;overflow:hidden}
+.spread:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(transparent,#d3c3ad 10%,#d3c3ad 90%,transparent);opacity:.5}
+.spread:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 31px,#a88e6c0a 32px);pointer-events:none}
+.cover-page{position:relative;z-index:1;min-height:260px;padding:38px 6% 25px 8%;background:linear-gradient(115deg,#f6f0e5,#e9decc);border-bottom:1px solid #c9b89e}
+.cover-meta{display:flex;justify-content:space-between;gap:12px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#806b58}
+.cover-title{margin:28px 0 0;font:500 clamp(42px,7vw,76px)/.8 "Cormorant Garamond",serif;color:#382319;letter-spacing:-.035em}
+.cover-title span{display:block;margin:14px 0 0 13%;font-size:.66em;font-style:italic;color:#704c36}
+.calligraphy{font-family:"Great Vibes",cursive;color:var(--wine);font-weight:400}
+.cover-quotes{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-top:24px;flex-wrap:wrap}
+.cover-quotes .calligraphy{font-size:clamp(25px,4vw,40px);line-height:1.05}
+.cover-quotes .number{font-size:45px}
+.cover-rule{height:1px;background:linear-gradient(90deg,transparent,#b99c78,transparent);margin-top:24px}
+.tabs{position:relative;z-index:10;display:flex;gap:5px;padding:0 4% 0 7%;background:#e7dbc8;align-items:end;min-height:52px;border-bottom:1px solid #c5b397}
+.tab{border:1px solid #b9a184;border-bottom:0;border-radius:8px 8px 0 0;padding:10px 16px 9px;background:linear-gradient(#d5c3a9,#c5ad8e);color:#4d3525;font:600 17px "Cormorant Garamond",serif;box-shadow:inset 0 1px #fff8}
+.tab.active{background:var(--paper);color:var(--wine);transform:translateY(1px);padding-bottom:11px}
+.page{position:relative;z-index:1;padding:30px clamp(18px,5vw,60px) 44px 7%;min-height:450px;animation:pageIn .28s ease}
+@keyframes pageIn{from{opacity:.35;transform:translateX(8px)}to{opacity:1;transform:none}}
+.page-head{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:22px}
+.kicker{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3,p{margin-top:0}h2{font:600 clamp(34px,5vw,48px)/.95 "Cormorant Garamond",serif;margin:8px 0 0;color:#3c271c}h3{font:600 27px "Cormorant Garamond",serif;margin:0;color:#432d20}
+.page-number{font:italic 18px "Cormorant Garamond",serif;color:#9a8269}
+.month-switch{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
+.pill,.soft-button{border:1px solid #c7b69e;border-radius:30px;background:#f9f4ea;padding:8px 13px;color:#5d4737;font-size:11px}
+.pill.active,.soft-button.primary{background:var(--wine);border-color:var(--wine);color:#fff}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.summary-card{padding:14px 16px;border:1px solid #d4c4ad;background:linear-gradient(145deg,#fbf7ee,#eae0d1);box-shadow:0 2px 5px #80664a12}
+.summary-card small{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#887565}
+.summary-card b{display:block;margin-top:5px;font:600 27px "Cormorant Garamond",serif;color:var(--wine)}
+.progress{height:7px;background:#dfd2bf;border-radius:10px;overflow:hidden;margin:12px 0 24px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#6f2028,#b58a61);transition:width .25s}
+.subhead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:26px 0 12px}
+.fixed-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.fixed-item{display:flex;align-items:center;gap:10px;padding:12px;border:1px solid #d8c9b5;background:#faf6ee;min-width:0}
+.check{appearance:none;flex:0 0 19px;width:19px;height:19px;border:1.5px solid #9b8369;border-radius:3px;background:#fffaf1;display:grid;place-items:center}
+.check:checked{background:var(--green);border-color:var(--green)}.check:checked:after{content:"✓";font-size:13px;color:white}
+.fixed-item.done .item-name{text-decoration:line-through;color:#968777}
+.item-copy{min-width:0;flex:1}.item-name{font-size:12px;font-weight:600}.item-detail{display:block;font-size:9px;color:#958371;margin-top:3px}.item-amount{font:600 20px "Cormorant Garamond",serif;white-space:nowrap;color:#493226}
+.envelope-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 15px;margin:18px 0 25px}
+.envelope-card{position:relative;min-width:0;cursor:pointer;border:0;background:none;padding:0;text-align:left;color:inherit;transition:transform .2s}
+.envelope-card:hover{transform:translateY(-4px)}
+.envelope-art{position:relative;display:block;aspect-ratio:1.42/1;border-radius:4px 4px 8px 8px;background:linear-gradient(145deg,#69452f,#3b2116 70%);box-shadow:0 9px 14px #39231635,inset 0 0 0 1px #a07a54,inset 0 0 0 5px #392115;overflow:hidden}
+.envelope-art:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.5%,#8a6243 50%,#55321f 51%) left bottom/100% 100% no-repeat;clip-path:polygon(0 43%,50% 83%,100% 43%,100% 100%,0 100%);opacity:.9}
+.envelope-art:after{content:"";position:absolute;left:0;right:0;top:0;height:69%;background:linear-gradient(145deg,#805b40,#5a3825);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;filter:drop-shadow(0 3px 2px #1d100b55)}
+.envelope-label{position:absolute;z-index:2;left:10%;right:10%;top:30%;min-height:36%;display:flex;align-items:center;justify-content:center;text-align:center;padding:5px;background:linear-gradient(145deg,#f6eddd,#dfceb3);border:1px solid #c5a982;box-shadow:0 2px 4px #1a0d0870}
+.envelope-label:before{content:"";position:absolute;inset:4px;border:1px solid #b69b75}
+.envelope-label span{position:relative;z-index:1;font:600 clamp(13px,1.8vw,19px)/.95 "Cormorant Garamond",serif;letter-spacing:.04em;color:#493023}
+.envelope-seal{position:absolute;z-index:3;bottom:8%;left:50%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9bb83,#8b6137 65%,#50311e);border:1px solid #d1ad75;box-shadow:0 2px 3px #170c08}
+.envelope-caption{display:flex;justify-content:space-between;gap:5px;align-items:center;margin-top:9px}
+.envelope-caption strong{font:600 20px "Cormorant Garamond",serif;color:#3f2a1e}
+.envelope-caption small{font-size:9px;color:#806e5b}
+.envelope-caption em{font:italic 16px "Cormorant Garamond",serif;color:var(--wine);white-space:nowrap}
+.envelope-card.completed .envelope-art{filter:saturate(.75)}.envelope-card.completed .envelope-seal:after{content:"✓";display:grid;place-items:center;color:#fff;font-size:12px;font-style:normal}
+.envelope-card.zero{opacity:.66}
+.note-strip{padding:12px 15px;background:#e9decc;border-left:3px solid var(--gold);font:italic 15px "Cormorant Garamond",serif;color:#705b48;line-height:1.4}
+.totals{max-width:650px}.total-row{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px dashed #d0c0aa;font-size:12px}.total-row b{font:600 20px "Cormorant Garamond",serif}.balance{margin-top:12px;padding:13px;background:#e8dece;display:flex;justify-content:space-between;gap:12px}
+.goal-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.goal-card{border:1px solid #d4c3aa;background:#faf6ed;padding:17px}.goal-card .goal-amount{font:600 25px "Cormorant Garamond",serif;color:var(--wine)}.goal-card p{font-size:11px;line-height:1.6;color:#7e6d5b;margin:8px 0 0}
+.event-row{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed #d3c4b1;font-size:12px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;text-align:center;max-width:540px}.calendar span{padding:9px 0;font:16px "Cormorant Garamond",serif}.calendar .weekday{font:9px "DM Sans",sans-serif;color:#8a7866}.calendar .today{border-radius:50%;outline:2px solid var(--wine);color:var(--wine)}
+.countdown{margin:28px 0;padding:20px;text-align:center;background:#e9decc;border:1px solid #d2c0a7;max-width:540px}.countdown strong{display:block;font:600 56px "Cormorant Garamond",serif;color:var(--wine)}
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:18px;background:#160d09b8;backdrop-filter:blur(4px)}.modal.show{display:flex}
+.modal-paper{position:relative;width:min(480px,100%);padding:26px;background:linear-gradient(145deg,#fbf6ec,#e9ddca);border:8px solid #583722;box-shadow:0 25px 80px #0008}
+.modal-paper:before{content:"";position:absolute;inset:7px;border:1px solid #b99a70;pointer-events:none}
+.modal-content{position:relative;z-index:1}.modal-close{position:absolute;right:8px;top:4px;border:0;background:none;color:#73543b;font-size:25px}
+.modal-envelope{height:155px;max-width:270px;margin:10px auto 18px;position:relative;background:linear-gradient(145deg,#714a31,#3b2116);box-shadow:0 10px 18px #39231640;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.modal-envelope:before{content:"";position:absolute;inset:0;background:#936c4b;clip-path:polygon(0 0,100% 0,50% 65%)}
+.modal-envelope:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#6b472f,#3c2116);clip-path:polygon(0 100%,50% 42%,100% 100%)}
+.modal-amount{font:600 34px "Cormorant Garamond",serif;color:var(--wine);text-align:center;margin:12px}
+.modal-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+.hidden{display:none!important}.footer{display:flex;justify-content:space-between;gap:10px;padding:17px 4% 5px;color:#8e7964;font-size:9px;letter-spacing:.12em}
+input[type=file]{max-width:100%;font-size:11px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+@media(max-width:720px){
+ body{padding:10px 5px 30px}.book{padding:8px;border-radius:11px}.book-spine{width:30px}.stitch{left:6px}.book-rings{left:16px;top:90px;bottom:55px}.ring{width:25px;height:15px;border-width:3px}
+ .spread{margin-left:21px;min-height:760px}.cover-page{padding:25px 5% 20px 8%;min-height:215px}.cover-title{font-size:clamp(40px,11vw,60px);margin-top:25px}.cover-title span{margin-left:6%;font-size:.65em}
+ .cover-quotes{margin-top:22px}.cover-quotes .calligraphy{font-size:clamp(23px,7vw,32px)}.cover-quotes .number{font-size:35px}
+ .tabs{padding:0 3%;gap:3px;overflow-x:auto;min-height:45px}.tab{font-size:15px;padding:9px 10px;white-space:nowrap}
+ .page{padding:22px 4% 35px 7%;min-height:490px}.page-head{display:block}.page-number{display:none}.summary{grid-template-columns:repeat(2,1fr)}.summary-card:last-child{grid-column:span 2}
+ .fixed-list{grid-template-columns:1fr}.envelope-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 10px}.envelope-caption{display:block}.envelope-caption em{display:block;margin-top:2px}.envelope-caption strong{font-size:19px}
+ .goal-list{grid-template-columns:1fr}.footer{font-size:8px}
+}
+@media(max-width:360px){.envelope-grid{gap:12px 7px}.envelope-label span{font-size:12px}.tab{padding:8px 8px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="desk">
+ <div class="desk-label"><span>PERSONAL FINANCE · VOLUME I</span><span>ЛИЧНЫЙ ОРГАНАЙЗЕР</span></div>
+ <div class="book">
+  <div class="book-spine"><i class="stitch"></i></div>
+  <div class="book-rings" aria-hidden="true"><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="ring"></i></div>
+  <div class="spread">
+   <header class="cover-page">
+    <div class="cover-meta"><span>MY FINANCE PLANNER</span><span>№ 01 · 2026—2027</span></div>
+    <h1 class="cover-title">Мой бюджет<span>личный финансовый органайзер</span></h1>
+    <div class="cover-quotes">
+     <span class="calligraphy">MONEY CHOSE ME</span>
+     <span class="calligraphy">MONEY TALKS</span>
+     <span class="calligraphy number">888</span>
+    </div>
+    <div class="cover-rule"></div>
+   </header>
+   <nav class="tabs" aria-label="Разделы блокнота">
+    <button class="tab active" data-page="distribution">Распределение</button>
+    <button class="tab" data-page="goals">Цели</button>
+    <button class="tab" data-page="history">История</button>
+    <button class="tab" data-page="calendar">Календарь</button>
+   </nav>
+   <main>
+    <section class="page" id="distribution">
+     <div class="page-head"><div><div class="kicker">Лист распределения · текущий месяц</div><h2>План месяца</h2><div class="month-switch" id="months"></div></div><span class="page-number">01 / 04</span></div>
+     <div class="summary"><div class="summary-card"><small>Доход месяца</small><b id="income">21 635 ₽</b></div><div class="summary-card"><small>Отмечено</small><b id="done">0 ₽</b></div><div class="summary-card"><small>Выполнено</small><b id="percent">0%</b></div></div>
+     <div class="progress"><i id="bar"></i></div>
+     <div class="subhead"><h3>Обязательные расходы</h3><span class="kicker">каждый месяц</span></div>
+     <div class="fixed-list" id="fixed"></div>
+     <div class="subhead"><h3>Конверты месяца</h3><span class="kicker" id="monthKind">Месяц А</span></div>
+     <p class="note-strip">Каждая категория хранится в собственном конверте. Здесь отображается только план пополнения — без остатка внутри.</p>
+     <div class="envelope-grid" id="envelopes"></div>
+     <div class="subhead"><h3>Итог распределения</h3><button class="soft-button" id="editIncome">Изменить доход</button></div>
+     <div class="totals" id="totals"></div>
+     <div class="footer"><span>ЛИСТ № 01</span><span id="monthFoot">НОЯБРЬ · А</span></div>
+    </section>
+    <section class="page hidden" id="goals">
+     <div class="page-head"><div><div class="kicker">Долгосрочные ориентиры</div><h2>Мои цели</h2></div><span class="page-number">02 / 04</span></div>
+     <div class="goal-list">
+      <article class="goal-card"><div class="kicker">Регулярный платёж</div><h3>Основной перевод</h3><div class="goal-amount">12 500 ₽</div><p>Плановая сумма, которую важно предусмотреть в начале месяца.</p></article>
+      <article class="goal-card"><div class="kicker">Резерв</div><h3>Финансовая подушка</h3><div class="goal-amount">По плану А / Б</div><p>Отдельный конверт с пополнением по очереди.</p></article>
+      <article class="goal-card"><div class="kicker">Забота о себе</div><h3>Здоровье</h3><div class="goal-amount">По плану А / Б</div><p>Небольшой регулярный шаг для запланированных расходов.</p></article>
+      <article class="goal-card"><div class="kicker">Будущие планы</div><h3>Путешествия и покупки</h3><div class="goal-amount">По очереди</div><p>Пополнение распределяется между месяцами А и Б.</p></article>
+     </div>
+     <div class="subhead"><h3>Лестница накоплений</h3><span class="kicker">отмечай этапы</span></div>
+     <div id="milestones"></div>
+     <div class="footer"><span>ЛИСТ № 02</span><span>ЦЕЛИ</span></div>
+    </section>
+    <section class="page hidden" id="history">
+     <div class="page-head"><div><div class="kicker">Сохранённые действия</div><h2>История</h2></div><span class="page-number">03 / 04</span></div>
+     <div class="subhead"><h3>Недавние отметки</h3><button class="soft-button primary" id="export">Скачать резервную копию</button></div>
+     <div id="events"></div>
+     <div class="subhead"><h3>Восстановить данные</h3></div>
+     <p class="note-strip">Выбери ранее сохранённый JSON-файл. Импорт заменит текущие данные.</p>
+     <div class="tools"><input type="file" id="import" accept="application/json"><button class="soft-button" id="reset">Сбросить отметки месяца</button></div>
+     <div class="footer"><span>ЛИСТ № 03</span><span>ИСТОРИЯ И КОПИИ</span></div>
+    </section>
+    <section class="page hidden" id="calendar">
+     <div class="page-head"><div><div class="kicker">Личный календарь</div><h2>Календарь</h2></div><span class="page-number">04 / 04</span></div>
+     <div class="kicker" id="calMonth"></div><div class="calendar" id="cal"></div>
+     <div class="countdown"><div class="kicker">До следующего 25-го числа</div><strong id="count">—</strong><span class="kicker">дней до нового финансового шага</span></div>
+     <div class="footer"><span>ЛИСТ № 04</span><span>КАЛЕНДАРЬ</span></div>
+    </section>
+   </main>
+  </div>
+ </div>
+</div>
+<div class="modal" id="envelopeModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-paper"><button class="modal-close" id="closeModal" aria-label="Закрыть">×</button><div class="modal-content">
+  <div class="kicker" style="text-align:center">ЛИЧНЫЙ КОНВЕРТ</div><h2 id="modalTitle" style="text-align:center"></h2>
+  <div class="modal-envelope"></div><div class="kicker" style="text-align:center">ПЛАН ПОПОЛНЕНИЯ В ЭТОМ МЕСЯЦЕ</div>
+  <div class="modal-amount" id="modalAmount"></div><p class="note-strip" style="text-align:center">Остаток внутри конверта не отображается.</p>
+  <div class="modal-actions"><label class="soft-button"><input type="checkbox" class="check" id="modalCheck" style="display:inline-block;vertical-align:middle"> Пополнено</label><button class="soft-button" id="modalDone">Готово</button></div>
+ </div></div>
+</div>
+<script src="app.js"></script>
+</body></html>

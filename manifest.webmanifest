@@ -1,1 +1,9 @@
-{"name":"Мой бюджет — органайзер","short_name":"Мой бюджет","start_url":"./","display":"standalone","background_color":"#24150e","theme_color":"#24150e"}
+{
+  "name": "Мой бюджет — личный финансовый органайзер",
+  "short_name": "Мой бюджет",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#2b160f",
+  "theme_color": "#2b160f",
+  "icons": []
+}
